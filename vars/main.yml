@@ -1,0 +1,10 @@
+---
+# vars file for starship
+starship_platform: '{{ starship_arch }}-{{ starship_os }}'
+starship_archive: 'starship-{{ starship_platform }}.{{ starship_archive_type }}'
+starship_url: '{{ starship_mirror }}/{{ starship_ver }}/{{ starship_archive }}'
+starship_checksum: '{{ starship_checksums[starship_ver][starship_platform] }}'
+
+starship_install_dir: '{{ starship_parent_install_dir }}/starship-{{ starship_platform }}-{{ starship_ver }}'
+starship_exe: '{{ starship_install_dir }}/starship'
+starship_link: '{{ starship_parent_install_dir }}/bin/starship'
