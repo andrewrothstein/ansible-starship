@@ -1,6 +1,6 @@
 ---
 # defaults file for starship
-starship_ver: v0.41.0
+starship_ver: v0.41.3
 starship_mirror: https://github.com/starship/starship/releases/download
 starship_arch: x86_64
 starship_os: unknown-linux-gnu
@@ -36,3 +36,12 @@ starship_checksums:
     x86_64-unknown-linux-gnu: sha256:657cd723b215daf5d097868a9149604f8a37ea98f92b99aa9f8b30452e4af376
     # https://github.com/starship/starship/releases/download/v0.41.0/starship-x86_64-unknown-linux-musl.tar.gz.sha256
     x86_64-unknown-linux-musl: sha256:566f13f58763bfa56bc460eff507ba81bd09a4a4b48c8699e3695c411f2c77a1
+  v0.41.3:
+    # https://github.com/starship/starship/releases/download/v0.41.3/starship-x86_64-apple-darwin.tar.gz.sha256
+    x86_64-apple-darwin: sha256:39dc67794a8c423ce2c48a04fe2299df56e8a7fc0bdf392e9ce23733da095b32
+    # https://github.com/starship/starship/releases/download/v0.41.3/starship-x86_64-pc-windows-msvc.zip.sha256
+    x86_64-pc-windows-msvc: sha256:e1947d242fd8710038db2e08e99c2439d29ce2b7d4914c189563ea60e41e2c6e
+    # https://github.com/starship/starship/releases/download/v0.41.3/starship-x86_64-unknown-linux-gnu.tar.gz.sha256
+    x86_64-unknown-linux-gnu: sha256:f53fa6295e09940ad57341db18c46e3c74e875d505976d8567aee4759c574db5
+    # https://github.com/starship/starship/releases/download/v0.41.3/starship-x86_64-unknown-linux-musl.tar.gz.sha256
+    x86_64-unknown-linux-musl: sha256:e0cb6a8ce16fea9bf5ab78ad7bba6ba1d9d1b220672f8eda1caa7dee04a214b1
