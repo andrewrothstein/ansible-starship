@@ -25,4 +25,4 @@ dl_ver() {
     dl $ver x86_64 unknown-linux-musl
 }
 
-dl_ver ${1:-v0.42.0}
+dl_ver ${1:-v0.43.0}
