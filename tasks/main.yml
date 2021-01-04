@@ -9,7 +9,7 @@
       skip: true
       paths:
         - '{{ role_path }}/vars'
-- name: look for install
+- name: look for install in {{ starship_install_dir }}
   become: yes
   stat:
     path: '{{ starship_install_dir }}'
@@ -17,12 +17,12 @@
   register: starship_binary
 - when: not starship_binary.stat.exists
   block:
-    - name: download
+    - name: downloading {{ starship_url }} to {{ starship_tmp_archive }}
       become: yes
       become_user: root
       get_url:
         url: '{{ starship_url }}'
-        dest: /tmp/{{ starship_archive }}
+        dest: '{{ starship_tmp_archive }}'
         checksum: '{{ starship_checksum }}'
         mode: 0644
     - name: mkdir
@@ -32,22 +32,22 @@
         path: '{{ starship_install_dir }}'
         state: directory
         mode: 0755
-    - name: unarchive
+    - name: unarchiving {{ starship_tmp_archive }} to {{ starship_install_dir }}
       become: yes
       become_user: root
       unarchive:
         remote_src: yes
-        src: /tmp/{{ starship_archive }}
+        src: '{{ starship_tmp_archive }}'
         dest: '{{ starship_install_dir }}'
         creates: '{{ starship_exe }}'
   always:
-    - name: cleanup
+    - name: rm {{ starship_tmp_archive }}
       become: yes
       become_user: root
       file:
-        path: /tmp/{{ starship_archive }}
+        path: '{{ starship_tmp_archive }}'
         state: absent
-- name: link
+- name: linking {{ starship_link }} to {{ starship_exe }}
   become: yes
   become_user: root
   file:

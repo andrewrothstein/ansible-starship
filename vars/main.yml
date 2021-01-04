@@ -1,7 +1,9 @@
 ---
 # vars file for starship
 starship_platform: '{{ starship_arch }}-{{ starship_os }}'
-starship_archive: 'starship-{{ starship_platform }}.{{ starship_archive_type }}'
+starship_archive: starship-{{ starship_platform }}.{{ starship_archive_type }}
+starship_tmp_archive: /tmp/{{ starship_archive }}
+
 starship_url: '{{ starship_mirror }}/{{ starship_ver }}/{{ starship_archive }}'
 starship_checksum: '{{ starship_checksums[starship_ver][starship_platform] }}'
 
