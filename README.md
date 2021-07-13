@@ -1,6 +1,6 @@
 andrewrothstein.starship
 =========
-[![Build Status](https://travis-ci.org/andrewrothstein/ansible-starship.svg?branch=master)](https://travis-ci.org/andrewrothstein/ansible-starship)
+![Build Status](https://github.com/andrewrothstein/ansible-starship/actions/workflows/build.yml/badge.svg)
 
 Installs [starship](https://starship.rs/).
 
