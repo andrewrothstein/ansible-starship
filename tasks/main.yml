@@ -25,7 +25,7 @@
         dest: '{{ starship_tmp_archive }}'
         checksum: '{{ starship_checksum }}'
         mode: 0644
-    - name: mkdir
+    - name: mkdir {{ starship_install_dir }}
       become: yes
       become_user: root
       file:
