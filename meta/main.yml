@@ -34,6 +34,6 @@ galaxy_info:
 
 dependencies:
   - role: andrewrothstein.unarchive-deps
-    version: v1.2.1
+    version: v1.2.2
   - role: andrewrothstein.alpine-glibc-shim
-    version: v2.0.15
+    version: v2.0.16
