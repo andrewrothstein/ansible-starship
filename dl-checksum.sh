@@ -14,7 +14,7 @@ dl()
     local url=$MIRROR/$ver/starship-${platform}.${archive_type}.sha256
 
     printf "    # %s\n" $url
-    printf "    %s: sha256:%s\n" $platform $(curl -sSL $url)
+    printf "    %s: sha256:%s\n" $platform $(curl -sSLf $url)
 }
 
 dl_ver() {
@@ -26,4 +26,4 @@ dl_ver() {
     dl $ver x86_64 unknown-linux-musl
 }
 
-dl_ver ${1:-v1.2.1}
+dl_ver ${1:-v1.3.0}
