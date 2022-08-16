@@ -279,3 +279,21 @@ starship_checksums:
     x86_64-unknown-linux-gnu: sha256:cd05b6390251128e723bbbcbf21099b975a43058fbe57721eb3597be9f089aca
     # https://github.com/starship/starship/releases/download/v1.9.1/starship-x86_64-unknown-linux-musl.tar.gz.sha256
     x86_64-unknown-linux-musl: sha256:8cfcd33a81f8f6ffd60ec08e6e3988615b363c42eead9a0e2db22b7256767a0d
+  v1.10.0:
+    # https://github.com/starship/starship/releases/download/v1.10.0/starship-x86_64-apple-darwin.tar.gz.sha256
+    x86_64-apple-darwin: sha256:bc6cf6c2274c2e3ffdf5e6aa1f78051ebb711121ac5fcc36f07f86bcc327ea8d
+    # https://github.com/starship/starship/releases/download/v1.10.0/starship-x86_64-pc-windows-msvc.zip.sha256
+    x86_64-pc-windows-msvc: sha256:32133add098e74c8ca7ae18fbeba8b18db49bb90dfebb2b2334a1ea20f39c804
+    # https://github.com/starship/starship/releases/download/v1.10.0/starship-x86_64-unknown-linux-gnu.tar.gz.sha256
+    x86_64-unknown-linux-gnu: sha256:d3df17be51d9a43239ec3f65467e1283a906e95c303cdaafc5528e542b904134
+    # https://github.com/starship/starship/releases/download/v1.10.0/starship-x86_64-unknown-linux-musl.tar.gz.sha256
+    x86_64-unknown-linux-musl: sha256:5e47810e2d40c54bc3ea3976dcdce0ce85c6e9ad886b5f878f6acdcc5504ab5f
+  v1.10.1:
+    # https://github.com/starship/starship/releases/download/v1.10.1/starship-x86_64-apple-darwin.tar.gz.sha256
+    x86_64-apple-darwin: sha256:c4edf25a41f621de73e3d9e27a1b1c6ddc888361d99af65701078681ca5536ef
+    # https://github.com/starship/starship/releases/download/v1.10.1/starship-x86_64-pc-windows-msvc.zip.sha256
+    x86_64-pc-windows-msvc: sha256:9f706741078f6f26ce96f360b474aeef4a7922e945465b8013ab0a166c49ee4b
+    # https://github.com/starship/starship/releases/download/v1.10.1/starship-x86_64-unknown-linux-gnu.tar.gz.sha256
+    x86_64-unknown-linux-gnu: sha256:ab2d62a41e9eeef06b5f0c935782410643d5f691f64c930b397494b2f4aabd5e
+    # https://github.com/starship/starship/releases/download/v1.10.1/starship-x86_64-unknown-linux-musl.tar.gz.sha256
+    x86_64-unknown-linux-musl: sha256:76cbd296637423bd6b48bb943ad22556323db662781fb4121433ef535850bfcd
