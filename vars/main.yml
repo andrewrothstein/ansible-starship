@@ -1,5 +1,7 @@
 ---
 # vars file for starship
+starship_arch: '{{ ansible_architecture }}'
+starship_os: '{{ starship_os_map[ansible_system] }}'
 starship_platform: '{{ starship_arch }}-{{ starship_os }}'
 starship_archive: starship-{{ starship_platform }}.{{ starship_archive_type }}
 starship_tmp_archive: /tmp/{{ starship_archive }}
