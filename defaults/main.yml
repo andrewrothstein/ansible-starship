@@ -1,9 +1,12 @@
 ---
 # defaults file for starship
+# Changed os_map for Linux to use the musl binaries. gnu binaries not available on ARM.
+# See also https://github.com/starship/starship/pull/1590
+
 starship_ver: v1.11.0
 starship_mirror: https://github.com/starship/starship/releases/download
 starship_os_map:
-  Linux: unknown-linux-gnu
+  Linux: unknown-linux-musl
   Windows: pc-windows-msvc
   Darwin: apple-darwin
 starship_archive_type: tar.gz
