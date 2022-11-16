@@ -11,6 +11,14 @@
       skip: true
       paths:
         - '{{ role_path }}/vars'
+- name: Checking for existing symlink at {{ starship_link }}
+  stat:
+    path: '{{ starship_link }}'
+  register: sym_target
+- name: Fail if {{ starship_link }} was not a symlink.
+  fail:
+    msg: Starship was already installed as a binary at {{ starship_link }}. Can't overwrite with symlink.
+  when: sym_target.stat.islnk is defined and sym_target.stat.islnk == False
 - name: look for install in {{ starship_install_dir }}
   become: yes
   stat:
@@ -56,3 +64,4 @@
     src: '{{ starship_exe }}'
     dest: '{{ starship_link }}'
     state: link
+  when: sym_target.stat.islnk is not defined or sym_target.stat.islnk == True
