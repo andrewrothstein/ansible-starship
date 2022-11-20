@@ -24,6 +24,10 @@ dl_ver() {
     dl $ver x86_64 pc-windows-msvc zip
     dl $ver x86_64 unknown-linux-gnu
     dl $ver x86_64 unknown-linux-musl
+    dl $ver aarch64 apple-darwin
+    dl $ver aarch64 unknown-linux-musl
+    dl $ver aarch64 pc-windows-msvc zip
+    dl $ver arm unknown-linux-musleabihf
 }
 
 dl_ver ${1:-v1.11.0}
