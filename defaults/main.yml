@@ -1,6 +1,6 @@
 ---
 # defaults file for starship
-starship_ver: v1.14.1
+starship_ver: v1.14.2
 starship_mirror: https://github.com/starship/starship/releases/download
 starship_os_map:
   Linux: unknown-linux-gnu
