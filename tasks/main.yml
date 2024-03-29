@@ -1,8 +1,9 @@
 ---
-- include_role:
-    name: andrewrothstein.unarchive-deps
-- name: resolve platform specific vars
-  include_vars: '{{ item }}'
+- name: Installing andrewrothstein.unarchivedeps
+  ansible.builtin.include_role:
+    name: andrewrothstein.unarchivedeps
+- name: Resolve platform specific vars
+  ansible.builtin.include_vars: '{{ item }}'
   with_first_found:
     - files:
         - '{{ ansible_distribution }}-{{ ansible_distribution_release }}.yml'
@@ -11,48 +12,49 @@
       skip: true
       paths:
         - '{{ role_path }}/vars'
-- name: look for install in {{ starship_install_dir }}
-  become: yes
-  stat:
+- name: Look for install in {{ starship_install_dir }}
+  become: true
+  ansible.builtin.stat:
     path: '{{ starship_install_dir }}'
-  changed_when: False
+  changed_when: false
   register: starship_binary
-- when: not starship_binary.stat.exists
+- name: Downloading and installing starship
+  when: not starship_binary.stat.exists
   block:
-    - name: downloading {{ starship_url }} to {{ starship_tmp_archive }}
-      become: yes
+    - name: Downloading {{ starship_url }} to {{ starship_tmp_archive }}
+      become: true
       become_user: root
-      get_url:
+      ansible.builtin.get_url:
         url: '{{ starship_url }}'
         dest: '{{ starship_tmp_archive }}'
         checksum: '{{ starship_checksum }}'
-        mode: 0644
-    - name: mkdir {{ starship_install_dir }}
-      become: yes
+        mode: '644'
+    - name: Mkdir {{ starship_install_dir }}
+      become: true
       become_user: root
-      file:
+      ansible.builtin.file:
         path: '{{ starship_install_dir }}'
         state: directory
-        mode: 0755
-    - name: unarchiving {{ starship_tmp_archive }} to {{ starship_install_dir }}
-      become: yes
+        mode: '755'
+    - name: Unarchiving {{ starship_tmp_archive }} to {{ starship_install_dir }}
+      become: true
       become_user: root
-      unarchive:
-        remote_src: yes
+      ansible.builtin.unarchive:
+        remote_src: true
         src: '{{ starship_tmp_archive }}'
         dest: '{{ starship_install_dir }}'
         creates: '{{ starship_exe }}'
   always:
-    - name: rm {{ starship_tmp_archive }}
-      become: yes
+    - name: Rm {{ starship_tmp_archive }}
+      become: true
       become_user: root
-      file:
+      ansible.builtin.file:
         path: '{{ starship_tmp_archive }}'
         state: absent
-- name: linking {{ starship_link }} to {{ starship_exe }}
-  become: yes
+- name: Linking {{ starship_link }} to {{ starship_exe }}
+  become: true
   become_user: root
-  file:
+  ansible.builtin.file:
     src: '{{ starship_exe }}'
     dest: '{{ starship_link }}'
     state: link
