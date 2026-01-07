@@ -18,15 +18,17 @@ galaxy_info:
     - name: Debian
       versions:
         - bookworm
-        - bullseye
+        - trixie
     - name: EL
       versions:
-        - '8'
+        - '10'
         - '9'
     - name: Fedora
       versions:
-        - '39'
-        - '40'
+        - all
+    - name: Kali
+      versions:
+        - all
     - name: Ubuntu
       versions:
         - jammy

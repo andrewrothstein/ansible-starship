@@ -30,4 +30,7 @@ dl_ver() {
     dl $ver arm unknown-linux-musleabihf
 }
 
-dl_ver ${1:-v1.22.1}
+dl_ver v1.23.0
+dl_ver v1.24.0
+dl_ver v1.24.1
+dl_ver ${1:-v1.24.2}

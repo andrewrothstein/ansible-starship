@@ -1,6 +1,6 @@
 ---
 # defaults file for starship
-starship_ver: v1.22.1
+starship_ver: v1.24.2
 starship_mirror: https://github.com/starship/starship/releases/download
 starship_os_map:
   Linux: unknown-linux-gnu
@@ -512,3 +512,71 @@ starship_checksums:
     aarch64-pc-windows-msvc: sha256:e70380ca76c9a83a7ded88c1d2edcf84ee79222b7274b8c8c6d74bc8a9b7b0d1
     # https://github.com/starship/starship/releases/download/v1.22.1/starship-arm-unknown-linux-musleabihf.tar.gz.sha256
     arm-unknown-linux-musleabihf: sha256:41dd34b405eca3cd9258879c5f43e1f34461e1c9ab0a5308d6df33024e6a853a
+  v1.23.0:
+    # https://github.com/starship/starship/releases/download/v1.23.0/starship-x86_64-apple-darwin.tar.gz.sha256
+    x86_64-apple-darwin: sha256:8cac7a18fb1faf0aec50bd221dd71ecc8553850d99c212231851ae64ba11f089
+    # https://github.com/starship/starship/releases/download/v1.23.0/starship-x86_64-pc-windows-msvc.zip.sha256
+    x86_64-pc-windows-msvc: sha256:50e670dda19bcc480ae4d1f7f0d3c7a092693252292406b54ababa706100f03c
+    # https://github.com/starship/starship/releases/download/v1.23.0/starship-x86_64-unknown-linux-gnu.tar.gz.sha256
+    x86_64-unknown-linux-gnu: sha256:cef41df04378c6f692913c5d9c1032d3b9a4369a1d2f3296c8300ed8838c2197
+    # https://github.com/starship/starship/releases/download/v1.23.0/starship-x86_64-unknown-linux-musl.tar.gz.sha256
+    x86_64-unknown-linux-musl: sha256:8d06d2cc67aedd6316ff58ab679fb80cded0d85de1dcd5727df0633d35356d57
+    # https://github.com/starship/starship/releases/download/v1.23.0/starship-aarch64-apple-darwin.tar.gz.sha256
+    aarch64-apple-darwin: sha256:042c8001275316836a3c43fdb88d0787395edfd0c10d209e4892ab5577b80d57
+    # https://github.com/starship/starship/releases/download/v1.23.0/starship-aarch64-unknown-linux-musl.tar.gz.sha256
+    aarch64-unknown-linux-musl: sha256:d37040138c68b5f3334bbe16d4615f0a83829deebecc5d014e779c302e8270d8
+    # https://github.com/starship/starship/releases/download/v1.23.0/starship-aarch64-pc-windows-msvc.zip.sha256
+    aarch64-pc-windows-msvc: sha256:b89470c308fa2fa4bf77d0df8ea9c74d8102817be936b2367959845c60008baa
+    # https://github.com/starship/starship/releases/download/v1.23.0/starship-arm-unknown-linux-musleabihf.tar.gz.sha256
+    arm-unknown-linux-musleabihf: sha256:ec58cb85fbb85f3f80c1476fcea49c7c2d882d1c6961f3fd88e2b1b9d00951f0
+  v1.24.0:
+    # https://github.com/starship/starship/releases/download/v1.24.0/starship-x86_64-apple-darwin.tar.gz.sha256
+    x86_64-apple-darwin: sha256:9ad2b79e8f54b4ce7aab46f7e1f31cf1a96381d6988106f05d05aed8429fc112
+    # https://github.com/starship/starship/releases/download/v1.24.0/starship-x86_64-pc-windows-msvc.zip.sha256
+    x86_64-pc-windows-msvc: sha256:afa6f4e7bfcfb250a642361368d72599b485cb28ca0e67dc2149264b1dec2306
+    # https://github.com/starship/starship/releases/download/v1.24.0/starship-x86_64-unknown-linux-gnu.tar.gz.sha256
+    x86_64-unknown-linux-gnu: sha256:8bcc6071e37c80915c7253158d8a326f0a0074b188677d1b277ad159b666354a
+    # https://github.com/starship/starship/releases/download/v1.24.0/starship-x86_64-unknown-linux-musl.tar.gz.sha256
+    x86_64-unknown-linux-musl: sha256:8111d9c25e8b583284e1dacec4bfb50000323ea1a66453c6451ef026d76781cf
+    # https://github.com/starship/starship/releases/download/v1.24.0/starship-aarch64-apple-darwin.tar.gz.sha256
+    aarch64-apple-darwin: sha256:236baba98a5f56787dee29c9472865a9ccef83fe2b6bfdce588249d427c72945
+    # https://github.com/starship/starship/releases/download/v1.24.0/starship-aarch64-unknown-linux-musl.tar.gz.sha256
+    aarch64-unknown-linux-musl: sha256:a3757fdcb80c4b2bb1c07c6c8ef86962a23382200726499a7fc4bcd917195718
+    # https://github.com/starship/starship/releases/download/v1.24.0/starship-aarch64-pc-windows-msvc.zip.sha256
+    aarch64-pc-windows-msvc: sha256:d5fb746738e55ee1ce3b712f17ff3a53c8758fd213ecccdbe62d02c1daafbe4a
+    # https://github.com/starship/starship/releases/download/v1.24.0/starship-arm-unknown-linux-musleabihf.tar.gz.sha256
+    arm-unknown-linux-musleabihf: sha256:93005e858a41092ee4377a3ef08f6d87c85a94686f2cf72947bc2836dcb4052a
+  v1.24.1:
+    # https://github.com/starship/starship/releases/download/v1.24.1/starship-x86_64-apple-darwin.tar.gz.sha256
+    x86_64-apple-darwin: sha256:66625a719017f93ffd0f2071abb78295665c916329bb89dd6a09163cb395e3f1
+    # https://github.com/starship/starship/releases/download/v1.24.1/starship-x86_64-pc-windows-msvc.zip.sha256
+    x86_64-pc-windows-msvc: sha256:3d0ed9a2efc07fca7560d22ac622473d0b7317cda6a792842f625cb9fe58c7bc
+    # https://github.com/starship/starship/releases/download/v1.24.1/starship-x86_64-unknown-linux-gnu.tar.gz.sha256
+    x86_64-unknown-linux-gnu: sha256:afa28fc0b33cfcf6da95f0f2cf2ec47b5f7460d64cf3eff17e2c11c5dfffab43
+    # https://github.com/starship/starship/releases/download/v1.24.1/starship-x86_64-unknown-linux-musl.tar.gz.sha256
+    x86_64-unknown-linux-musl: sha256:44a729c34aea5b0451fba49108cdc5ef6b1ae68db65e7623cc244a52efcd23d1
+    # https://github.com/starship/starship/releases/download/v1.24.1/starship-aarch64-apple-darwin.tar.gz.sha256
+    aarch64-apple-darwin: sha256:877e6b18d8f826167ca6b6f2ff00ebac2477fa1924c06b89befe524840ffc726
+    # https://github.com/starship/starship/releases/download/v1.24.1/starship-aarch64-unknown-linux-musl.tar.gz.sha256
+    aarch64-unknown-linux-musl: sha256:a01ac37aa5993b78ecd6761c5ff4f805032b8ba566357ffbb2227980216f2216
+    # https://github.com/starship/starship/releases/download/v1.24.1/starship-aarch64-pc-windows-msvc.zip.sha256
+    aarch64-pc-windows-msvc: sha256:db0dd5c5bd9cc3aad167a5443f058b2ee453388e23a521c25a3c0203f98738f3
+    # https://github.com/starship/starship/releases/download/v1.24.1/starship-arm-unknown-linux-musleabihf.tar.gz.sha256
+    arm-unknown-linux-musleabihf: sha256:639503f751231eea5a51a2e6feaa24b6ee3c56b8a92457bd4337a2b778247d3e
+  v1.24.2:
+    # https://github.com/starship/starship/releases/download/v1.24.2/starship-x86_64-apple-darwin.tar.gz.sha256
+    x86_64-apple-darwin: sha256:237beb10cc970c4361536e9f9f434dfed755f8282c5cd951b6a7e3fcbda8e779
+    # https://github.com/starship/starship/releases/download/v1.24.2/starship-x86_64-pc-windows-msvc.zip.sha256
+    x86_64-pc-windows-msvc: sha256:d38424c595320e9639a276666347d5e44cb004de3972f40b9a5a1a6b88537f29
+    # https://github.com/starship/starship/releases/download/v1.24.2/starship-x86_64-unknown-linux-gnu.tar.gz.sha256
+    x86_64-unknown-linux-gnu: sha256:3f12f61883ff324c1dbe7b885fa125d5490960e5cad6a12eeaa34695ec1b5744
+    # https://github.com/starship/starship/releases/download/v1.24.2/starship-x86_64-unknown-linux-musl.tar.gz.sha256
+    x86_64-unknown-linux-musl: sha256:00ff3c1f8ffb59b5c15d4b44c076bcca04d92cf0055c86b916248c14f3ae714a
+    # https://github.com/starship/starship/releases/download/v1.24.2/starship-aarch64-apple-darwin.tar.gz.sha256
+    aarch64-apple-darwin: sha256:d3a0da21374962625a2ee992110979bc1fa33424d7b6aea58a70405e26544fd9
+    # https://github.com/starship/starship/releases/download/v1.24.2/starship-aarch64-unknown-linux-musl.tar.gz.sha256
+    aarch64-unknown-linux-musl: sha256:56b9ff412bbf374d29b99e5ac09a849124cb37a0a13121e8470df32de53c1ea6
+    # https://github.com/starship/starship/releases/download/v1.24.2/starship-aarch64-pc-windows-msvc.zip.sha256
+    aarch64-pc-windows-msvc: sha256:b04e006742a6d116d00b231d09dd6c5f7cf949a718512a72f201e3b0c0ce30d6
+    # https://github.com/starship/starship/releases/download/v1.24.2/starship-arm-unknown-linux-musleabihf.tar.gz.sha256
+    arm-unknown-linux-musleabihf: sha256:1df5e6ff76725c72c049484863612a165eb0101fd372b28a3c45e4f38dcbe4ab
